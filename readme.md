@@ -19,10 +19,11 @@ Thanks to [@camenduru](https://github.com/camenduru)!
 ### Install
 
 ```bash
-# xformers is required! please refer to https://github.com/facebookresearch/xformers for details.
-# for example, we use torch 2.1.0 + cuda 11.8
-pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
-pip install -U xformers --index-url https://download.pytorch.org/whl/cu118
+git clone https://github.com/doanthinhvo/LGM.git
+
+# Install for python 3.10.12 and cuda 11.8
+pip install torch==2.1.0+cu118 torchvision==0.16.0+cu118 torchaudio==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+pip install -U xformers==0.0.22.post4+cu118 --index-url https://download.pytorch.org/whl/cu118
 
 # a modified gaussian splatting (+ depth, alpha rendering)
 git clone --recursive https://github.com/ashawkey/diff-gaussian-rasterization
